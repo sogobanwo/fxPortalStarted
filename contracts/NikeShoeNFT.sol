@@ -6,7 +6,7 @@ import "./ERC721A.sol";
 contract NikeShoeNFT is ERC721A {
     uint8 public maxSupply = 5;
 
-    constructor() ERC721A("Leverkusen", "LEV") {}
+    constructor() ERC721A("NikeShoe", "NS") {}
 
     function safeMint(uint8 _quantity) external payable {
         _safeMint(msg.sender, _quantity);
