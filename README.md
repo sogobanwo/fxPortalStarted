@@ -1,16 +1,27 @@
-# ERC20 Goerli to Mumbai Bridge Using fxPortal
-This project demonstrates how to use the fxPortal contracts to transfer ERC20 tokens from Goerli to Mumbai.
+# Building with Polygon Bridge
+### Project Overview
+This project involves deploying an NFT collection on the Ethereum blockchain, mapping the collection to Polygon, and transferring assets over via the Polygon Bridge. To add a creative twist, image generation tools like DALLE 2 or Midjourney will be used to generate the images for the NFTs.
 
-### Steps for Bridging
+### Tools Used
+Hardhat
+Foundry (optional)
+DALLE 2 or Midjourney for image generation
+Pinata.cloud for IPFS storage
+Polygon Bridge for asset transfer
+Project Rubric
 
-1. Run npm i to install dependencies
-2. Put your private key in the .env.examples file and rename to .env when finished
-3. Run npx hardhat run scripts/deploy.js --network goerli to deploy ERC20 contract
-4. Paste the newly deployed contract address in the tokenAddress variable for the other scripts
-5. Make sure to fill in your public key
-6. Run npx hardhat run scripts/mint.js --network goerli to mint tokens to your wallet
-7. Run npx hardhat run scripts/approveDeposit.js --network goerli to approve and deposit your tokens to polygon
-8. Wait 20-30ish minutes for tokens to show on polygon account
-9. Use polyscan.com to check your account for the tokens. Once they arrive, you can click on the transaction to get the contract address for polygon.
-10. Use this polygon contract address for your getBalance script's tokenAddress
-11. Run npx hardhat run scripts/getBalance.js --network mumbai to see the new polygon balance
+### Getting Started
+
+To get started with this project, follow these steps:
+Set up a Hardhat project and install the required dependencies.
+Generate a collection of 5 images using DALLE 2 or Midjourney.
+Store the images on IPFS using Pinata.cloud.
+Deploy an ERC721 or ERC1155 contract on the Goerli Ethereum Testnet.
+Implement the promptDescription function on the contract.
+Map the NFT collection using the Polygon network token mapper (optional).
+Write Hardhat scripts for batch minting and transferring NFTs.
+Test the project by approving, depositing, and verifying the transfer of NFTs on the Mumbai testnet.
+Good luck with your project!
+
+### Author 
+Twitter: @OlorunsogoBanwo
